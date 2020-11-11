@@ -1,0 +1,164 @@
+	body{
+		margin: 0px;
+		padding: 0px;
+		background: black;
+		display: grid;
+		grid-template-rows:60px 813px 200px 150px;
+		grid-template-columns:50% auto ;
+		grid-template-areas:
+		'header header'
+		'nav nav'
+		'aside section'
+		'footer footer';  
+	}
+
+	.prim { 
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: black;
+	}
+
+
+	#header{ 
+	background-color: #333;
+	position: fixed; 
+	top: 0; 
+	width: 100%;
+	transition: top 0.3s; 
+	
+	}
+	
+	.aleft {
+	  float: left;
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 7px;
+ 
+	}
+	
+	.aright {
+	  float: right;
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 20px;
+	  text-decoration: none;
+	}
+	
+	.aleft:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+
+	.aright:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+
+
+
+	#nav{
+		background: aqua;
+		grid-area: nav;
+	}
+	
+
+	.container {
+	  position: static;
+
+	}
+
+
+	.mySlides {
+	  display: block;
+	}
+
+	
+	.cursor {
+	  cursor: pointer;
+	}
+
+
+	.prev,
+	.next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 40%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: 50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 20px;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  -webkit-user-select: none;
+	}
+
+	
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	
+	.prev:hover,
+	.next:hover {
+	  background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 120px 25px;
+	  position: absolute;
+	  top: 0;
+	}
+
+		
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Six columns side by side */
+	.column {
+	  float: left;
+	  width: 16.66%;
+	}
+
+	/* Add a transparency effect for thumnbail images */
+	.demo {
+	  opacity: 0.6;
+	}
+
+	.active,
+	.demo:hover {
+	  opacity: 1;
+	}
+
+	#aside{
+		background: green;
+		grid-area: aside;
+	}
+
+	#section{
+		background: purple;
+		grid-area: section;
+	}
+
+	#footer{
+		background: yellow;
+		grid-area: footer;
+	}
+
+	
+	
+
+
+	

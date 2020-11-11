@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="azi.css">
+</head>
+<body>
+<!-----------------------Menu orizonal------------------>
+	<header  id="header">
+		
+				<ul class="prim"> 	
+				  <li><a class="aleft" href="azi.html"><img src="logo.jpg" width="45"></a></li>	
+				  <li><a class="aright" href="#about">About</a></li>
+				  <li><a class="aright" href="#contact">Contact</a></li>
+				  <li><a class="aright" href="#news">News</a></li>
+				  <li><a class="aright" href="azi.html">Home</a></li>
+				  <li><a class="aright" style="float: left;" href="azi.html">Mercedes-Benz</a></li>
+				</ul>
+	
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	    document.getElementById("header").style.top = "0";
+		}
+	  else {
+	    document.getElementById("header").style.top = "-60px";
+	  	}
+	  prevScrollpos = currentScrollPos;
+		}
+		var mybutton = document.getElementById("myBtn");
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+	</header>
+
+	<!-----------------------blocul cu imagini------------------>
+	<nav id="nav">
+	  <div class="container">
+	  <div class="mySlides">
+	    <div class="numbertext">1 / 6</div>
+	    <img src="5.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext">2 / 6</div>
+	    <img src="6.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext">3 / 6</div>
+	    <img src="7.png" style="width:100%">
+	  </div>
+	    
+	  <div class="mySlides">
+	    <div class="numbertext">4 / 6</div>
+	    <img src="8.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext">5 / 6</div>
+	    <img src="9.png" style="width:100%">
+	  </div>
+	    
+	  <div class="mySlides">
+	    <div class="numbertext">6 / 6</div>
+	    <img src="10.png" style="width:100%">
+	  </div>
+	    
+	  <a class="prev" onclick="plusSlides(-1)">❮</a>
+	  <a class="next" onclick="plusSlides(1)">❯</a>
+
+	  
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	</script>
+	</nav>
+<!-----------------------sfarsit blocul cu imagini------------------>
+	<aside id="aside">
+		Asideasdasd
+	</aside>
+	<section id="section">
+		Section
+	</section>
+	<footer id="footer">
+		<em>Footer</em>
+	</footer>
+</body>
+</html>
