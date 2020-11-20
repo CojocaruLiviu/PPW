@@ -3,12 +3,12 @@
 		padding: 0px;
 		background: black;
 		display: grid;
-		grid-template-rows:60px 813px 200px 150px;
+		grid-template-rows:60px 700px 755px 250px ;
 		grid-template-columns:50% auto ;
 		grid-template-areas:
 		'header header'
 		'nav nav'
-		'aside section'
+		'section section'
 		'footer footer';  
 	}
 
@@ -142,19 +142,55 @@
 	  opacity: 1;
 	}
 
-	#aside{
-		background: green;
-		grid-area: aside;
-	}
+
 
 	#section{
-		background: purple;
+		font-family:verdana;
 		grid-area: section;
+		background: black;
+		color: white;
+		padding-top:5%;
+		padding-left: 5%;
+		
+	}
+
+	.text{
+		margin-top: 1%;
+		margin-right: 35%;
+	}
+
+	.but{
+		width: 150px;
+		height: 45px;
+		background: #00adef;
+		color: white;
+		margin-top : 3%;
+	}
+
+	.buti{
+		margin-top: 13%;
+		margin-right: 1%;
+		width: 23%;
+		height: 23%;
 	}
 
 	#footer{
-		background: yellow;
+	
 		grid-area: footer;
+		font-family:verdana;
+		background: black;
+		color: white;
+		padding-top:1%;
+		padding-left: 5%;
+	}
+
+	.imag{
+		margin-top: 1%;
+		margin-left: 2%;
+	}
+	
+	hr{
+		margin-right: 3%;
 	}
 
 	
