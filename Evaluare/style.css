@@ -1,0 +1,48 @@
+body{
+		margin: 0px;
+		padding: 0px;
+		background: white;
+		display: grid;
+		grid-template-rows:700px 700px 755px 250px ;
+		grid-template-columns: repeat(2, 1fr); 
+		grid-template-areas:
+		'header  button'
+		'home home'
+		'about about'
+		'footer footer';  
+	}
+
+#header{
+	grid-area: header;
+	margin-left: 5%;
+	margin-top: 1%;
+	font-size: 20px;
+	align-items: center;
+}
+
+
+#button{
+	grid-area: button;
+	margin-right: 0%;
+	margin-top: 5%;
+	font-size: 20px;
+	align-items: center;
+}
+
+#home{
+	grid-area: home;
+	background:yellow;
+
+}
+
+#about{
+	grid-area: about;
+	background:blue;
+
+}
+
+#footer{
+	grid-area: footer;
+	background:orange;
+
+}
