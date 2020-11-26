@@ -282,7 +282,7 @@ section#categories .section-title div:nth-child(2){
 }
 
 section#categories .section-title  hr{
-    width: 150px;
+    width: 200px;
 }
 
 section#categories .section-title h2{
@@ -291,6 +291,7 @@ section#categories .section-title h2{
     opacity: 0.1;
     font-weight: bolder;
     font-family: Nunito;
+    margin-left: 12%;
 }
 
 section#categories{
@@ -300,9 +301,9 @@ section#categories{
 section#categories article.section-body{
     display: grid;
     align-items: center;
-    column-gap: 8px;
     grid-template-columns: 220px 220px 220px ;
     grid-template-rows: 350px;
+    column-gap: 5%;
 }
 
 section#categories div.rectangle{
@@ -310,11 +311,11 @@ section#categories div.rectangle{
     width: 210px;
     height: 310px;
     position: initial;
-    left: 0;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 90px;
     z-index: -51;
     background: #F7DEA6;
+    margin-right: 9%;
 }
 
 section#categories div.rectangle p{
@@ -322,8 +323,111 @@ section#categories div.rectangle p{
     margin-top: 10%;
     margin-left: 10%;
     font-size: 25px;
-    
 }
+
+section#categories article.section-body  img{
+   
+    height: 55%; 
+    align-items: center;
+}
+
+section article ul{
+    list-style: none;
+}
+
+section article ul li a.sign-up{
+    
+    font-weight: bold;
+    border: 1px solid #3E3F43;
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin-left: 40px;
+    text-decoration: none;
+    margin-bottom: 5%; 
+}
+
+
+
+section#testimony .section-title{
+    display: grid;
+    align-items: center;
+    column-gap: 8px;
+    grid-template-columns: 205px 150px 379px;
+}
+
+section#testimony .section-title{
+    display: grid;
+    align-items: center;
+    column-gap: 8px;
+    grid-template-columns: 30px 205px 150px 379px;
+}
+
+section#testimony .section-title div:nth-child(2){
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section#testimony .section-title  hr{
+    width: 200px;
+}
+
+section#testimony .section-title h2{
+    font-size: 70px;
+    color: #222222;
+    opacity: 0.1;
+    font-weight: bolder;
+    font-family: Nunito;
+    margin-left: 12%;
+}
+
+
+
+section#testimony article.section-body{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 220px 220px 220px ;
+    grid-template-rows: 350px;
+    column-gap: 5%;
+}
+
+section#testimony div.rectangle{
+    
+    width: 210px;
+    height: 310px;
+    position: initial;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 90px;
+    z-index: -51;
+    background-image: url("home.png");
+
+}
+
+section#testimony div.feedback{
+    
+    width: 410px;
+    height: 250px;
+    position: initial;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 90px;
+    z-index: -51;
+    border:solid 1px #A8DCEC;
+    
+
+}
+.mesaj{
+    margin-top: 7%;
+}
+
+
+
+section#subs article.section-body{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 220px 220px;
+    grid-template-rows: 250px;
+    column-gap: 5%;
+} 
+
 
 footer{
     
