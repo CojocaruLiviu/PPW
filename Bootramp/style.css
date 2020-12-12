@@ -1,0 +1,33 @@
+	body{
+		background: black;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.bg-light {
+	    background-color: black!important;
+	}
+
+	.navbar-light .navbar-brand {
+		color:white;
+	}
+
+	a{
+		color: white!important;
+	}
+
+	
+	div.container{
+		margin-top: 5%;
+		color: white;
+
+	}
+
+	div.container.text{
+		margin-right: 15%;
+	}
+
+	div.container img{
+		width: 20%;
+		margin-right: 2%;
+	}
