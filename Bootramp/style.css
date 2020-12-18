@@ -36,3 +36,16 @@
 		margin-top: 1%;
 	
 	}
+
+	div.container-fluid-img {
+		margin-top: 5%;
+	}
+	
+	div.container-fluid-img img {
+		width: 320px;
+		margin-top: 1%;
+	}
+
+	div.container div.col img{
+		width:70px;
+	}
